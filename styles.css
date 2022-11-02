@@ -1,0 +1,43 @@
+
+/*this will make sure the height covers 100% percent of the page*/
+html, body {
+    height: 100%;
+}
+/*this will add a background image to the page*/
+body {
+    background-color: white;
+    background-image: url("images/pixel-art-vacation.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    color: bisque;
+    font-family: monospace;
+}
+.header-main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+.header-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    margin: 20px;
+    padding: 20px 0;
+    border-radius: 50%; 
+    width: 200px;
+}
+
+a {
+    color: bisque;
+    text-decoration: none; /*this code will remove underline from listing*/
+}
+ul {
+list-style-type: none;
+font-size: 25px;
+margin: 0;
+padding: 0;
+}
