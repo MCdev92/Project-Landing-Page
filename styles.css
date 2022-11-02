@@ -5,39 +5,159 @@ html, body {
 }
 /*this will add a background image to the page*/
 body {
+    display: flex; /*apply flex to whole body*/
+    flex-flow:column nowrap; /*center items middle as column*/
+    align-items: center; /*centered items middle of page*/
     background-color: white;
     background-image: url("images/pixel-art-vacation.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left top;
-    color: bisque;
-    font-family: monospace;
+    color:burlywood;
 }
 .header-main {
     display: flex;
-    flex-direction: column-reverse;
-    gap: 30px;
+    flex-flow: row wrap; /*flex-direction row, flex-wrap: wrap*/
+    align-items: center;
+    justify-content: center;
+    position: sticky; /*this code will make the header stick when it hits zero pxls*/
+    top: 0;
+    z-index: 1; /*this codes makes the header primary anything else will hid behind*/
+    width: 70vw;
+    background-color: rgb(13, 54, 65);
+    padding-top: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 50%;
+    
 }
+.section1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgb(13, 54, 65);
+    width: 50%;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 5px; /*this codes will fix the box roundness*/
+    border-bottom-right-radius: 5px;
+}
+.section2 {
+    display: flex;
+    flex-flow: column nowrap; /*will display section in a column*/
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f38957;
+    width: 50%;
+    margin: 20px;
+    font-family: 'Trispace', Courier;
+    text-align: center;
+    color: #10474B;
+    border-radius: 5px;
+}
+.linkbox-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+}
+/*this will adjust all gif images with max-width: 60% annd aling center*/
+.gif {
+    max-width: 60%;
+    text-align: center;
+}
+
+/*code for my h1*/
+.welcome {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    color: #EEDD99;
+    font-family: 'Press Start 2P', monospace;
+}
+
 .header-links {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .logo {
-    display: flex;
     margin: 20px;
-    padding: 20px 0;
-    border-radius: 50%; 
-    width: 200px;
+    border-radius: 100%;
+    border: 3px solid rgb(79, 199, 240);
+    box-shadow: 3px 2px rgb(126, 32, 32);
+    max-width: 200px;
+    
+}
+.link-1 {
+    border: 2px solid rgb(79, 199, 240);
+    box-shadow: 2px 2px rgb(126, 32, 32);
+    border-radius: 3px;
+    padding: 4%;
+}
+.link-2 {
+    border: 2px solid rgb(79, 199, 240);
+    box-shadow: 2px 2px rgb(126, 32, 32);
+    border-radius: 3px;
+    padding: 4%;
+}
+.welcome h3 {
+    font-family: 'Trispace', Courier;
+    color: rgb(49, 197, 190);
+    padding-right: 50px;
+}
+.footer
+{
+    display: block;
+    text-align: center;
+    background-color: #61150b;
+    margin: 30px;
+    width: 50%;
+    text-align: center;
+    color: #5cf0b2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
 }
 
+.footer_link
+{
+    color:#43E0C6;
+    
+}
 a {
-    color: bisque;
+    color: burlywood;
     text-decoration: none; /*this code will remove underline from listing*/
 }
 ul {
-list-style-type: none;
-font-size: 25px;
-margin: 0;
-padding: 0;
+    display: flex;
+    list-style-type: none;
+    font-size: 17px;
+    margin: 3 2 2px;
+    padding: 0;
+    gap: 20px;
 }
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+button {
+    font-family: 'Trispace', monospace;
+    font-size: medium;
+    color: white;
+    padding: 5px;
+    border: 2px solid #f38957; /*this will change the border to background-color*/
+    cursor: pointer; /*will create a little hand as a pointer*/
+    background-color: transparent; /*set background to transparent*/
+    border-radius: 2px;
+    margin-bottom: auto;
+}
+

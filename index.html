@@ -3,18 +3,80 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
         <title>MCdev92|Homepage</title>
     </head>
     <body> 
-        <div class="header-main">
+        <nav class="header-main">
           <div class="header-links">
-           <img src="images/MCdev92.png" alt="logo" class="logo"/>
+             <img src="images/MCdev92.png" alt="logo" class="logo"/>
            <ul>
-            <a href="about.html">about</a>
-            <a href="contact.html">contact</a>
+            <li class="link-1"><a href="about.html">about</a></li>
+            <li class="link-2"><a href="contact.html">contact</a></li>
            </ul>
-         </div>
-        </div> 
-        <h1>Welcome to MCdev92 Homepage!</h1>
+        </nav> 
+        <div class="section1">
+          <div class="welcome">
+            <h1>Welcome to MCdev92 Homepage!</h1>
+            <h3>This landing page is part of The Odin Project curriculum. I have taken this opportunity to make this project my very own portfolio website. Please feel free to look around and leave any feedbacks!. Thanks for stopping by!.</h3>
+          </div>
+        </div>
+        <div class="section2">
+                <div class="context">
+                  <h2>Take a look around the different sections:</h2>
+                  <h3>Don't be shy!, mi casa is your casa!</h3>
+                </div>
+         <!--link-box with extensions (portfolio,skills, about etx)-->
+         <div class="linkbox-container"> 
+            <div class="linkbox"> <!--portfolio image,link-->
+                Portfolio
+                <a href="portfolio.html">
+                    <button type="button" class="linkbox-btn">
+                        <img class="gif" src="images/portfolio.gif" alt="papergif">
+                    </button>
+                </a>
+            </div>
+            <div class="linkbox"> <!--about image,link-->
+                About
+                <a href="about.html">
+                    <button type="button" class="linkbox-abt">
+                        <img class="gif" src="images/redbull.gif" alt="red-bull">
+                    </button>
+                </a>
+            </div>
+            <div class="linkbox"> <!--skills image,link-->
+                Skills
+                <a href="skills.html">
+                    <button type="button" class="linkbox-skl">
+                        <img class="gif" src="images/skills.gif" alt="programming">
+                    </button>
+                </a>
+            </div>
+            <div class="linkbox"> <!--contac image,link-->
+                Contact
+                <a href="contact.html">
+                    <button type="button" class="linkbox-ctc">
+                        <img class="gif" src="images/pixel-phone.gif" alt="pixelphone">
+                    </button>
+                </a>
+            </div> 
+         </div> <!--end of linbox extensions-->
+        </div>
+        <div class="section3">
+
+        </div>
+        <div class="section4">
+
+        </div>
+            <div class="footer">
+                Copyright ©
+                <a href="https://github.com/MCdev92" class="footer_link"> Mcdev92</a>
+                <br/>
+                In conjunction with
+                <a href="https://www.theodinproject.com" class="footer_link">
+                  The Odin Project
+                </a>
+              </div>
+        </footer>
     </body>
 </html>
