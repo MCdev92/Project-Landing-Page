@@ -1,7 +1,7 @@
 
 /*this will make sure the height covers 100% percent of the page*/
 html, body {
-    height: 100%;
+    height: auto;
 }
 /*this will add a background image to the page*/
 body {
@@ -9,22 +9,21 @@ body {
     flex-flow:column nowrap; /*center items middle as column*/
     align-items: center; /*centered items middle of page*/
     background-color: white;
-    background-image: url("images/pixel-art-vacation.webp");
+    background-image: url("images/sci-fi-gb010b53e7_1920.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left top;
-    color:burlywood;
 }
 .header-main {
     display: flex;
     flex-flow: row wrap; /*flex-direction row, flex-wrap: wrap*/
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     position: sticky; /*this code will make the header stick when it hits zero pxls*/
     top: 0;
     z-index: 1; /*this codes makes the header primary anything else will hid behind*/
     width: 70vw;
-    background-color: rgb(13, 54, 65);
+    background-color: rgb(167, 95, 27);
     padding-top: 20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -36,7 +35,7 @@ body {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    background-color:  rgb(13, 54, 65);
+    background-color:   rgb(167, 95, 27);
     width: 50%;
     margin-bottom: 20px;
     border-bottom-left-radius: 5px; /*this codes will fix the box roundness*/
@@ -46,7 +45,7 @@ body {
     display: flex;
     flex-flow: column nowrap; /*will display section in a column*/
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: #f38957;
     width: 50%;
     margin: 20px;
@@ -54,6 +53,7 @@ body {
     text-align: center;
     color: #10474B;
     border-radius: 5px;
+    font-size: 25px;
 }
 .linkbox-container {
     display: flex;
@@ -61,6 +61,8 @@ body {
     text-align: center;
     justify-content: center;
     width: 60%;
+    color:#086152;
+    font-weight: bold;
 }
 /*this will adjust all gif images with max-width: 60% annd aling center*/
 .gif {
@@ -72,11 +74,15 @@ body {
 .welcome {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 30%;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70%;
     color: #EEDD99;
-    font-family: 'Press Start 2P', monospace;
+    font-family: 'Trispace', Courier;
+}
+.context {
+    color:rgb(30, 61, 109);
+    font-weight: bold; 
 }
 
 .header-links {
@@ -97,24 +103,24 @@ body {
     box-shadow: 2px 2px rgb(126, 32, 32);
     border-radius: 3px;
     padding: 4%;
+    font-weight: bold;
+    font-size: large;
 }
 .link-2 {
     border: 2px solid rgb(79, 199, 240);
     box-shadow: 2px 2px rgb(126, 32, 32);
     border-radius: 3px;
     padding: 4%;
+    font-weight: bold;
+    font-size: large;
 }
-.welcome h3 {
-    font-family: 'Trispace', Courier;
-    color: rgb(49, 197, 190);
-    padding-right: 50px;
-}
-.footer
+
+footer
 {
     display: block;
     text-align: center;
     background-color: #61150b;
-    margin: 30px;
+    margin: 0;
     width: 50%;
     text-align: center;
     color: #5cf0b2;
@@ -128,8 +134,39 @@ body {
     color:#43E0C6;
     
 }
+.quote1 {
+    display: block;
+    text-align: center;
+    background-color: #418c99;
+    font-size: 18px;
+    font-family: 'Trispace', monospace;
+    margin: auto;
+    width: 50.5%;
+    text-align: center;
+    color: #EEDD99;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.section4 {
+    display: box;
+    text-align: center;
+    background-color: #3268a7;
+    font-size: 18px;
+    font-family: 'Trispace', monospace;
+    margin: 50px;
+    width: 50%;
+    text-align: center;
+    color: #EEDD99;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
 a {
-    color: burlywood;
+    color:rgb(243, 247, 250);
     text-decoration: none; /*this code will remove underline from listing*/
 }
 ul {
@@ -141,14 +178,9 @@ ul {
     gap: 20px;
 }
 h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+    color:rgb(2, 35, 83);
 }
+
 button {
     font-family: 'Trispace', monospace;
     font-size: medium;
@@ -161,3 +193,94 @@ button {
     margin-bottom: auto;
 }
 
+/*about section*/
+.content {
+    display: flex;
+    flex-flow: row nowrap; /*flex-direction row, flex-wrap: wrap*/
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 70vw;
+    background-color: rgb(64, 119, 96);
+    padding-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 50%;
+    color:#1b3050;
+    font-family: 'Aclonica';
+}
+.bio-c {
+    font-size: large;
+    color:#1b3050;
+    font-family: 'Trispace', monospace;
+    width: 55%;
+}
+.pic {
+    margin: 20px;
+    border-radius: 100%;
+    border: 3px solid rgb(79, 199, 240);
+    box-shadow: 3px 2px rgb(126, 32, 32);
+    max-width: 300px;
+}
+.qa {
+    display: block;
+    text-align: center;
+    background-color: #418c99;
+    font-size: 18px;
+    font-family: 'Trispace', monospace;
+    margin: 100px;
+    width: 50.5%;
+    text-align: center;
+    color: #EEDD99;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+/* about section */
+
+/*<br> </br>*/
+
+/*contact*/
+.cp {
+    display: flex;
+    flex-flow: row-reverse nowrap; /*flex-direction row, flex-wrap: wrap*/
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 70vw;
+    background-color: rgb(64, 119, 96);
+    padding-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 50%;
+    color:#1b3050;
+    font-family: 'Aclonica';
+}
+.contact {
+    font-size: large;
+    color:#1b3050;
+    font-family: 'Trispace', monospace;
+    width: 55%;
+}
+.abt-pix {
+    margin: 20px;
+    border-radius: 100%;
+    border: 3px solid rgb(79, 199, 240);
+    box-shadow: 3px 2px rgb(126, 32, 32);
+    max-width: 300px;
+}
+.pl {
+    display: flex;
+    flex-flow: column nowrap; /*will display section in a column*/
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f38957;
+    width: 50%;
+    margin: 200px;
+    font-family: 'Trispace', Courier;
+    text-align: center;
+    color: #10474B;
+    border-radius: 5px;
+    font-size: 25px;
+}
+/* contact section */
