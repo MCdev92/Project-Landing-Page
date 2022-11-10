@@ -211,9 +211,10 @@ h3 {
     font-size: large;
     color:#f7f7f8;
     font-family: 'Trispace', monospace;
-    width: 700px; /*move text to center, with a width of 700px;*/
+    max-width: 700px; /*move text to center, with a width of 700px;*/
     height: 500px; /*move text to center, with a height of 500px;*/
     text-align: left;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 .pic {
