@@ -1,8 +1,5 @@
-
-/*this will make sure the height covers 100% percent of the page*/
-html, body {
     
-}
+
 /*adding pading and margin 0 will allow my header to have no gaps*/
 body {
     display: flex;
@@ -16,13 +13,13 @@ body {
     display: flex;
     justify-content: space-between;
     border: 0;
-    box-shadow: 0 0 0 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); /*box shadow with transparency, bottom of header*/
     padding: 8px;
     color: #F9FAF8;
-    background-color: #253b5a;
+    background-color: #11273d;
     align-items: center;
     position: sticky;
-    top: 0;  
+    top: 0; 
 }
 
 .section1 {
@@ -31,15 +28,18 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     background-color:   rgb(255, 255, 255);
-    width: auto;
+    max-width: auto;
 }
 .section2 {
     display: flex;
     flex-flow: column;
     margin-top: 400px;
-    background-color: bisque;
-    font-family: 'trispace', courier;
-
+    background-color: gainsboro;
+    font-family: 'Trispace', Courier;
+    color: #10474B;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
 }
 /*Gif section*/
 /*Gifs container*/
@@ -48,7 +48,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: bisque;
+    background-color: gainsboro;
     width: auto; /*for now*/
     font-weight: bold;
 }
@@ -59,11 +59,11 @@ body {
 }
 
 button {
-    font-family: 'Trispace', monospace;
+    font-family: 'Trispace', Courier;
     font-size: medium;
     color: white;
     padding: 5px;
-    border: 2px solid  bisque; /*this will change the border to background-color*/
+    border: 2px solid gainsboro; /*this will change the border to background-color*/
     cursor: pointer; /*will create a little hand as a pointer*/
     background-color: transparent; /*set background to transparent*/
     border-radius: 2px;
@@ -122,8 +122,9 @@ footer
     margin-top: 100px;
     padding: 20px;
     color: #F9FAF8;
-    background-color: #253b5a;
+    background-color: #11273d;
     position: sticky;
+    box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
 }
 
 .footer_link
@@ -145,6 +146,7 @@ footer
     text-align: left;
     line-height: 0.9;
     font-size: clamp(40px,8vw,50px);
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
 }
 .quote2 {
     display: flex;
@@ -160,6 +162,7 @@ footer
     text-align: left;
     line-height: 0.9;
     font-size: clamp(40px,8vw,50px);
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
 }
 .section4 {
     
@@ -178,6 +181,7 @@ ul {
    gap: 20px;
    font-weight: bold;
    font-size: 18;
+   font-family: 'Trispace', Courier;
 }
 h3 {
     
@@ -191,10 +195,11 @@ h3 {
     justify-content:center;
     margin-top: 300px;
     height: auto;
-    background-color: #253b5a;
+    background-color: #11273d;
     width: auto;
     color:#d2def1;
-    font-family: 'Aclonica';
+    font-family: 'Trispace', Courier;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
 }
 .bio {
     display: flex;
@@ -210,11 +215,10 @@ h3 {
     align-items: center;
     font-size: large;
     color:#f7f7f8;
-    font-family: 'Trispace', monospace;
-    max-width: 700px; /*move text to center, with a width of 700px;*/
-    height: 500px; /*move text to center, with a height of 500px;*/
+    font-family: 'Trispace', Courier;
+    max-width: 700px; /* Max-width,move text to center, with a width of 700px;*/
+    height: 600px; /*move text to center, with a height of 500px;*/
     text-align: left;
-    margin-top: 50px;
     margin-bottom: 100px;
 }
 .pic {
@@ -231,15 +235,47 @@ h3 {
 
 /*contact*/
 .cp {
-   
+    display: flex;
+    flex-direction: row;/*flex-direction row, flex-wrap: wrap*/
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    height: auto;
+    background-color: #11273d;
+    width: auto;
+    color:#d2def1;
+    font-family: 'Trispace', Courier;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
 }
 .contact {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .abt-pix {
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 100%;
+    border: 3px solid rgb(79, 199, 240);
+    box-shadow: 3px 2px rgb(126, 32, 32);
+    max-width: 300px;
 }
 .pl {
-    
+    display:flex; /*find a way to have the content shrink with page*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color:#9999ee;
+    font-family: 'Trispace', monospace;
+    max-width: 700px; /* Max-width,move text to center, with a width of 700px;*/
+    height: 600px; /*move text to center, with a height of 500px;*/
+    text-align: left;
+    margin-bottom: 100px;
 }
 /* contact section */
