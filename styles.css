@@ -206,6 +206,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  
 }
 /* content of about, note: in order for me to move the text to the center, I had to give it a height: 500px; and width:700px;*/
 .bio-c {
@@ -217,9 +218,11 @@ h3 {
     color:#f7f7f8;
     font-family: 'Trispace', Courier;
     max-width: 700px; /* Max-width,move text to center, with a width of 700px;*/
-    height: 600px; /*move text to center, with a height of 500px;*/
+    height: 800px; /*move text to center, with a height of 500px;*/
     text-align: left;
     margin-bottom: 100px;
+    font-weight: bold;
+    font-size: 25px;
 }
 .pic {
     margin-top: 300px;
@@ -239,6 +242,7 @@ h3 {
     flex-direction: row;/*flex-direction row, flex-wrap: wrap*/
     align-items: center;
     justify-content: center;
+    gap: 35px;
     margin-top: 300px;
     height: auto;
     background-color: #11273d;
@@ -252,6 +256,11 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 45px;
+    font-size: 30px;
+    height: 600px;
 }
 .abt-pix {
     display: flex;
@@ -265,17 +274,33 @@ h3 {
     box-shadow: 3px 2px rgb(126, 32, 32);
     max-width: 300px;
 }
+
+
 .pl {
     display:flex; /*find a way to have the content shrink with page*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: large;
-    color:#9999ee;
+    font-size: 40px;
+    font-weight: bold;
+    color:#11273d;
     font-family: 'Trispace', monospace;
-    max-width: 700px; /* Max-width,move text to center, with a width of 700px;*/
+    max-width: auto; /* Max-width,move text to center, with a width of 700px;*/
     height: 600px; /*move text to center, with a height of 500px;*/
     text-align: left;
+    margin-top: 200px;
     margin-bottom: 100px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5); 
+    
 }
+#cl {
+    display:flex; /*find a way to have the content shrink with page*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 30px;
+}
+
 /* contact section */
