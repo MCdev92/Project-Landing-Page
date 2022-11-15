@@ -33,11 +33,11 @@ body {
 .section2 {
     display: flex;
     flex-flow: column;
-    margin-top: 400px;
+    margin-top: 66vh;
     background-color: gainsboro;
     font-family: 'Trispace', Courier;
     color: #10474B;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bold;
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
 }
@@ -51,6 +51,12 @@ body {
     background-color: gainsboro;
     width: auto; /*for now*/
     font-weight: bold;
+    font-size: 50px;
+}
+.linkbox {
+    display: flex;
+    flex-flow: column;
+    margin-top: 4vh;
 }
 /*this will adjust all gif images with max-width: 60% annd aling center*/
 .gif {
@@ -76,7 +82,7 @@ button {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    margin-top: 300px;
+    margin-top: 40vh;
     margin-left: 100px;
     width: 60%;
     color: #353533;
@@ -86,13 +92,13 @@ h4 {
     text-align: left;
     margin-bottom: 0;
     color:rgb(13, 185, 185);
-    font-size: large;
+    font-size: 3rem;
 }
 h1 {
     text-align: left;
     line-height: 0.9;
     margin-top: 10px;
-    font-size: clamp(40px,8vw,80px);
+    font-size: 120px;
 }
 .context {
     
@@ -119,6 +125,7 @@ footer
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 30px;
     margin-top: 100px;
     padding: 20px;
     color: #F9FAF8;
@@ -143,9 +150,9 @@ footer
     width: auto;
     color: #1e565e;
     font-family: 'Trispace', Courier;
-    text-align: left;
+    text-align: center;
     line-height: 0.9;
-    font-size: clamp(40px,8vw,50px);
+    font-size: clamp(40px,8vw,40px);
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
 }
 .quote2 {
@@ -161,7 +168,7 @@ footer
     font-family: 'Trispace', Courier;
     text-align: left;
     line-height: 0.9;
-    font-size: clamp(40px,8vw,50px);
+    font-size: clamp(40px,8vw,40px);
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
 }
 .section4 {
@@ -177,8 +184,8 @@ ul {
    display: flex;
    align-items: center;
    list-style-type: none;
-   font-size: 17px;
-   gap: 20px;
+   font-size: 30px;
+   gap: 30px;
    font-weight: bold;
    font-size: 18;
    font-family: 'Trispace', Courier;
@@ -193,7 +200,7 @@ h3 {
     flex-direction: column;/*flex-direction row, flex-wrap: wrap*/
     align-items: center;
     justify-content:center;
-    margin-top: 300px;
+    margin-top: 45vh;
     height: auto;
     background-color: #11273d;
     width: auto;
@@ -218,18 +225,19 @@ h3 {
     color:#f7f7f8;
     font-family: 'Trispace', Courier;
     max-width: 700px; /* Max-width,move text to center, with a width of 700px;*/
-    height: 800px; /*move text to center, with a height of 500px;*/
+    height: 135rem; /*move text to center, with a height of 500px;*/
     text-align: left;
     margin-bottom: 100px;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 40px;
 }
 .pic {
+    display: flex;
     margin-top: 300px;
     border-radius: 100%;
     border: 3px solid rgb(79, 199, 240);
     box-shadow: 3px 2px rgb(126, 32, 32);
-    max-width: 300px;
+    max-width: 500px;
 }
 
 /* about section */
@@ -237,9 +245,9 @@ h3 {
 /*<br> </br>*/
 
 /*contact*/
-.cp {
+#cp {
     display: flex;
-    flex-direction: row;/*flex-direction row, flex-wrap: wrap*/
+    flex-direction: row-reverse;/*flex-direction row, flex-wrap: wrap*/
     align-items: center;
     justify-content: center;
     gap: 35px;
@@ -253,26 +261,27 @@ h3 {
 }
 .contact {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     text-align: left;
     font-weight: bold;
-    margin-top: 45px;
-    font-size: 30px;
-    height: 600px;
+    margin-top: 20rem;
+    margin-bottom: 300px;
+    font-size: 50px;
+    
 }
 .abt-pix {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
     border-radius: 100%;
     border: 3px solid rgb(79, 199, 240);
     box-shadow: 3px 2px rgb(126, 32, 32);
-    max-width: 300px;
+    max-width: 500px;
 }
 
 
@@ -281,8 +290,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: large;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     color:#11273d;
     font-family: 'Trispace', monospace;
@@ -294,13 +302,15 @@ h3 {
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5); 
     
 }
-#cl {
+.cl {
     display:flex; /*find a way to have the content shrink with page*/
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 6rem;
     margin-top: 30px;
+    background-color: rgb(158, 156, 156);
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* contact section */
