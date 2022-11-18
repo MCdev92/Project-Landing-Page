@@ -22,7 +22,7 @@ body {
     top: 0; 
 }
 
-.section1 {
+.section-1 {
     display: flex;
     flex-flow: row;
     align-items: flex-start;
@@ -30,7 +30,7 @@ body {
     background-color:   rgb(255, 255, 255);
     max-width: auto;
 }
-.section2 {
+.section-2 {
     display: flex;
     flex-flow: column;
     margin-top: 66vh;
@@ -171,7 +171,7 @@ footer
     font-size: clamp(40px,8vw,40px);
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
 }
-.section4 {
+.section-4 {
     
    
 }
@@ -313,4 +313,70 @@ h3 {
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* contact section */
+/* Skills Section */
+#section-4 {
+    display: flex;
+    flex-flow: column;
+    margin-top: 66vh;
+    background-color: gainsboro;
+    font-family: 'Trispace', Courier;
+    color: #10474B;
+    font-size: 50px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
+}
+#linkbox-sec4 {
+    Display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.skills{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    max-width: 25%;
+    padding: 10px;
+   
+  }
+.img-icons {
+    padding-top: 5%;  
+}
+/* Skills Section */
+
+/* Portfolio section */
+#section-5 {
+    display: flex;
+    flex-flow: column;
+    margin-top: 66vh;
+    background-color: gainsboro;
+    font-family: 'Trispace', Courier;
+    color: #10474B;
+    font-size: 50px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5); /*box shadow with transparency*/
+}
+.portfolio {
+  display: flex;
+    flex-flow: column;
+    margin-top: 4vh;
+}
+#linkbox-sec5 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: gainsboro;
+    width: auto; /*for now*/
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/*this will adjust all  images with max-width: 60% annd aling center*/
+.screeshot {
+    max-width: 60%;
+    text-align: center;
+}
+/*Portfolio Section*/
